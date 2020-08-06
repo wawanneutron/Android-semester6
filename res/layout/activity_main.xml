@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="258dp"
+        android:layout_height="402dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="32dp"
+                android:background="#0091EA"
+                android:text="UAS JAVA 2"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="36sp"
+                android:textStyle="normal|bold" />
+            
+            
+        </LinearLayout>
+        
+        <TextView
+                android:id="@+id/slmtdatng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editPassword"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="32dp"
+                android:background="#0091EA"
+                android:text="Database API"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/nma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editPassword"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="32dp"
+                android:background="#0091EA"
+                android:text="Wawan Setiawan"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+        
+        
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/inputNimApi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:focusable="true"
+                android:hint="NIM"
+                android:inputType="number"
+                android:textColorHighlight="#ff7eff15"
+                android:textColorHint="#008B8B" >
+            </EditText>
+        </LinearLayout>
+        
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/inputNamaApi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Nama"
+                android:textColorHint="#008B8B" />
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        
+         
+       
+       
+        <TextView
+           		android:layout_marginTop="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KELAS:"
+                android:textColor="#008B8B"
+                android:textStyle="bold" />
+       </LinearLayout>
+       
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+           
+
+            <Spinner
+                android:id="@+id/spinnerKelasApi"
+                android:textColor="#008B8B"
+                android:layout_width="172dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+        
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        
+         
+       
+       
+        <TextView
+           		android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JURUSAN:"
+                android:textColor="#008B8B"
+                android:textStyle="bold" />
+       </LinearLayout>
+        
+        
+        
+   
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+
+          
+   
+        <RadioGroup
+            android:orientation="horizontal"
+       		android:id="@+id/radioGroupApi"
+        	android:layout_width="wrap_content"
+      	  	android:layout_height="wrap_content"
+            android:layout_below="@+id/txtview"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="0dp" >
+
+        <RadioButton
+            android:id="@+id/radioPil1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="TI" />
+
+        <RadioButton
+            android:id="@+id/radioPil2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SI" />
+
+        <RadioButton
+            android:id="@+id/radioPil3"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIA" />
+        
+    	</RadioGroup>
+           
+
+      </LinearLayout>
+         
+       
+         
+         
+        
+      
+        
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSimpanApi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="6dp"
+                android:background="#0091EA"
+                android:text="SIMPAN"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnViewApi"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:background="#f00"
+                android:text="VIEW"
+                android:textColor="#ffffFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
